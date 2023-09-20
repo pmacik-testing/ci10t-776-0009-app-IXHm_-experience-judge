@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hgxb
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0009-tenant/ci10t-776-0009-app/devfile-sample-hgxb@sha256:aff400c4a186e5be38ee393fd85ec3a4db75715fd58ab3fcdfb27f9243ad715c
+        name: my-nodejs
+        resources: {}
+status: {}
